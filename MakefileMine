@@ -1,0 +1,16 @@
+NAME	= libft.a
+CC	= gcc
+CFLAGS	= -Wall -Werror Wextra
+M	= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_memset.c ft_strlen.c
+OBJECTS	= $(M:.c=.o)
+
+all: $(NAME)
+
+$(NAME): $(OBJECTS) libft.h
+	ar $(NAME) $(OBJECTS)
+
+clean:
+
+fclean:
+
+re:
