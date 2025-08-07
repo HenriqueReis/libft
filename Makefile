@@ -4,7 +4,8 @@ NAME		= libft.a
 FLAGLIB		= -rcs
 RM		= /bin/rm -f
 
-FUNC		= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strlen.c ft_memset.c
+FUNC		= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+		  ft_strlen.c ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c
 
 OBJ		= $(FUNC:.c=.o)
 
