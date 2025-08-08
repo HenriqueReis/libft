@@ -14,21 +14,22 @@
 
 void *memcpy(void *dest, const void *src, size_t n)
 {
-	char	*temp;
-	char	*d;
-	size_t	i;
+	unsigned char	*destiny;
+	unsigned char	*source;
 
-	*temp = (char *)src;
+	destiny = (unsigned char*)dest;
+	source = (unsigned char*)src;
+
+	if (source > destiny)
+	{
+		ft_memcpy(destiny, source, n);
+		return (dest);
+	}
+
 	while (n--)
 	{
-		i++;
-		*temp++ = *src++;
+		destiny[n] = source[n];
 	}
-	*temp-= i;
-	d = (char *)dest;
-	while (i--)
-	{
-		*d++ = *temp++;
-	}
+
 	return (dest);
 }
