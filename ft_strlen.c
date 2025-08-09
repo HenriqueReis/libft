@@ -6,13 +6,13 @@
 /*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 21:12:27 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/07/23 20:24:28 by hemaciel         ###   ########.fr       */
+/*   Updated: 2025/08/09 13:05:30 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-size_t	ft_strlen(char *c)
+size_t	ft_strlen(const char	*c)
 {
 	size_t	len;
 

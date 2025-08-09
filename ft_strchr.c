@@ -1,35 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/06 20:40:06 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/08/09 11:09:32 by hemaciel         ###   ########.fr       */
+/*   Created: 2025/08/09 13:26:15 by hemaciel          #+#    #+#             */
+/*   Updated: 2025/08/09 13:44:00 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+char *ft_strchr(const char *s, int c)
 {
-	unsigned char	*destiny;
-	unsigned char	*source;
-
-	destiny = (unsigned char*)dest;
-	source = (unsigned char*)src;
-
-	if (source > destiny)
+	while (*s)
 	{
-		ft_memcpy(destiny, source, n);
-		return (dest);
+		if (*s == (char)c)
+			return (char *)s;
+		s++;
 	}
-
-	while (n--)
-	{
-		destiny[n] = source[n];
-	}
-
-	return (dest);
+	if (c == 0)
+		return (char *)s;
+	return (NULL);
 }
