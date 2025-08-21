@@ -6,7 +6,7 @@
 /*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/23 19:39:14 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/08/16 12:12:07 by hemaciel         ###   ########.fr       */
+/*   Updated: 2025/08/20 20:58:10 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,9 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strdup(const char *s);
+void	*ft_calloc(size_t nmemb, size_t size);
 #endif
