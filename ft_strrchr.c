@@ -6,15 +6,15 @@
 /*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/09 13:26:15 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/08/09 15:23:04 by hemaciel         ###   ########.fr       */
+/*   Updated: 2025/08/21 19:37:12 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	char *p;
+	char	*p;
 
 	p = NULL;
 	if (!(c))
