@@ -30,7 +30,7 @@ int	ft_atoi(const char *nptr)
 		i++;
 	}
 	while (ft_isdigit(nptr[i]))
-	{	
+	{
 		nbr = (nbr * 10) + (nptr[i] - '0');
 		i++;
 	}

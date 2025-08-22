@@ -26,10 +26,10 @@ $(NAME):	$(OBJ) libft.h
 			@ar $(FLAGLIB) $(NAME) $(OBJ)
 			@ranlib $(NAME)
 
-bonus:		$(BONUS_OBJ) $(NAME)
-			@echo "Linking bonus"
-			@ar $(FLAGLIB) $(NAME) $(BONUS_OBJ)
-			@ranlib $(NAME)
+#bonus:		$(BONUS_OBJ) $(NAME)
+#			@echo "Linking bonus"
+#			@ar $(FLAGLIB) $(NAME) $(BONUS_OBJ)
+#			@ranlib $(NAME)
 
 .c.o:
 			@echo "Compiling $(<)"
