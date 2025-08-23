@@ -12,16 +12,9 @@ FUNC		= ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strl
 
 OBJ		= $(FUNC:.c=.o)
 
-BONUS		= ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c\
-				ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c\
-				ft_lstmap.c
-
-
-BONUS_OBJ	= $(BONUS:.c=.o)
-
 all:		$(NAME)
 
-$(NAME):	$(OBJ) libft.h
+$(NAME):	$(OBJ) 
 			@echo "Linking $(NAME)"
 			@ar $(FLAGLIB) $(NAME) $(OBJ)
 			@ranlib $(NAME)
@@ -32,7 +25,7 @@ $(NAME):	$(OBJ) libft.h
 
 clean:
 			@echo "Cleaning"
-			@$(RM) $(OBJ) $(BONUS_OBJ)
+			@$(RM) $(OBJ)
 
 fclean:		clean
 			@echo "Cleaning headers"
