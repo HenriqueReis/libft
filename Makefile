@@ -1,4 +1,4 @@
-CFLAGS		= -Wall -Wextra -Werror -g
+CFLAGS		= -Wall -Wextra -Werror
 CC		= cc
 NAME		= libft.a
 FLAGLIB		= -rcs
@@ -28,7 +28,7 @@ clean:
 			@$(RM) $(OBJ)
 
 fclean:		clean
-			@echo "Cleaning headers"
+			@echo "Cleaning libft.a"
 			@$(RM) $(NAME)
 
 re:			fclean all
