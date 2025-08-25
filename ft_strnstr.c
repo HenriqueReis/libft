@@ -6,11 +6,11 @@
 /*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 11:05:14 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/08/21 19:41:44 by hemaciel         ###   ########.fr       */
+/*   Updated: 2025/08/25 17:30:08 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
