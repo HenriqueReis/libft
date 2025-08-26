@@ -54,7 +54,6 @@ static char	**populate(char **splitted, const char *s, char c, int wordcount)
 
 	i = 0;
 	j = 0;
-	start = 0;
 	while (i < wordcount)
 	{
 		while (s[j] && s[j] == c)
@@ -64,7 +63,10 @@ static char	**populate(char **splitted, const char *s, char c, int wordcount)
 			j++;
 		splitted[i] = ft_substr(s, start, j - start);
 		if (!splitted[i])
-			free(splitted[i]);
+		{
+			freesplit(splitted, i);
+			return (NULL);
+		}
 		i++;
 	}
 	splitted[i] = NULL;
@@ -83,9 +85,6 @@ char	**ft_split(char const *s, char c)
 	if (!splitted)
 		return (NULL);
 	if (!populate(splitted, s, c, wordcount))
-	{
-		freesplit(splitted, wordcount);
 		return (NULL);
-	}
 	return (splitted);
 }
