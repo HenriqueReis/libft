@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hemaciel <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: hemaciel <hemaciel@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/16 11:05:14 by hemaciel          #+#    #+#             */
-/*   Updated: 2025/08/25 17:30:08 by hemaciel         ###   ########.fr       */
+/*   Updated: 2025/08/30 11:42:50 by hemaciel         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	littlelen;
 
 	i = 0;
-	littlelen = ft_strlen(little);
-	if (!ft_strlen(little))
+	if (*little == '\0')
 		return ((char *)big);
+	littlelen = ft_strlen(little);
 	while (big[i] != '\0' && (i + littlelen <= len))
 	{
 		if (big[i] == little[0])
