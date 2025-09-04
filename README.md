@@ -1,7 +1,5 @@
 # libft
 
-![42 School](https://upload.wikimedia.org/wikipedia/commons/6/6f/42_School_logo.svg)
-
 ## Overview
 
 **libft** is a project from 42 School that aims to recreate a set of standard C library functions from scratch. This project is essential for learning C fundamentals, understanding memory management, and practicing code modularity.
