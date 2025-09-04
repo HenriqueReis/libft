@@ -33,6 +33,6 @@ This library includes:
 Clone the repository and compile the library:
 
 ```bash
-git clone <repo_url>
+git clone https://github.com/HenriqueReis/libft
 cd libft
 make
